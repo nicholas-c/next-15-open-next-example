@@ -9,6 +9,7 @@ export function middleware(request: NextRequest) {
     request.nextUrl.defaultLocale
   );
 
+  // Only adding as headers to render response on the page
   return NextResponse.next({
     headers: {
       middlewareLocale: request.nextUrl.locale,
