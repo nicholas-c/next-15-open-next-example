@@ -1,30 +1,39 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
   reactStrictMode: true,
-  i18n: {
-    locales: ["en", "es"],
-    defaultLocale: "en",
-    domains: [
-      // {
-      //   domain: "next-15-en.nich-carter-qza3ng.gymshark-sandbox.tools",
-      //   defaultLocale: "en",
-      // },
-      // {
-      //   domain: "next-15-es.nich-carter-qza3ng.gymshark-sandbox.tools",
-      //   defaultLocale: "es",
-      // },
+  async rewrites() {
+    return [
       {
-        domain: "gymshark.local",
-        defaultLocale: "en",
+        source: "/about",
+        destination: "/",
       },
       {
-        domain: "es.gymshark.local",
-        defaultLocale: "es",
+        source: "/account/register",
+        destination: "/api/auth?tab=register",
       },
-    ],
+      {
+        source: "/account/login",
+        destination: "/api/auth",
+      },
+    ];
   },
+  // i18n: {
+  //   locales: ["fr", "en", "es"],
+  //   defaultLocale: "en",
+  //   localeDetection: false,
+  //   domains: [
+  //     {
+  //       domain: "next-15-en.nich-carter-qza3ng.gymshark-sandbox.tools",
+  //       defaultLocale: "en",
+  //       locales: ["fr"],
+  //     },
+  //     {
+  //       domain: "next-15-es.nich-carter-qza3ng.gymshark-sandbox.tools",
+  //       defaultLocale: "es",
+  //     },
+  //   ],
+  // },
 };
 
 export default nextConfig;
