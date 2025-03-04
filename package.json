@@ -16,7 +16,7 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
-    "@opennextjs/aws": "^3.5.1",
+    "@opennextjs/aws": "https://pkg.pr.new/@opennextjs/aws@767",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",

@@ -18,22 +18,22 @@ const nextConfig: NextConfig = {
       },
     ];
   },
-  // i18n: {
-  //   locales: ["fr", "en", "es"],
-  //   defaultLocale: "en",
-  //   localeDetection: false,
-  //   domains: [
-  //     {
-  //       domain: "next-15-en.nich-carter-qza3ng.gymshark-sandbox.tools",
-  //       defaultLocale: "en",
-  //       locales: ["fr"],
-  //     },
-  //     {
-  //       domain: "next-15-es.nich-carter-qza3ng.gymshark-sandbox.tools",
-  //       defaultLocale: "es",
-  //     },
-  //   ],
-  // },
+  i18n: {
+    locales: ["fr", "en", "es"],
+    defaultLocale: "en",
+    localeDetection: false,
+    domains: [
+      {
+        domain: "next-15-en.nich-carter-qza3ng.gymshark-sandbox.tools",
+        defaultLocale: "en",
+        locales: ["fr"],
+      },
+      {
+        domain: "next-15-es.nich-carter-qza3ng.gymshark-sandbox.tools",
+        defaultLocale: "es",
+      },
+    ],
+  },
 };
 
 export default nextConfig;

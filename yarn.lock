@@ -1622,6 +1622,25 @@
     path-to-regexp "^6.3.0"
     urlpattern-polyfill "^10.0.0"
 
+"@opennextjs/aws@https://pkg.pr.new/@opennextjs/aws@767":
+  version "3.5.1"
+  resolved "https://pkg.pr.new/@opennextjs/aws@767#1d650d722a20fb13c4e1f98f34cb67fdfb310e3c"
+  dependencies:
+    "@aws-sdk/client-cloudfront" "3.398.0"
+    "@aws-sdk/client-dynamodb" "^3.398.0"
+    "@aws-sdk/client-lambda" "^3.398.0"
+    "@aws-sdk/client-s3" "^3.398.0"
+    "@aws-sdk/client-sqs" "^3.398.0"
+    "@node-minify/core" "^8.0.6"
+    "@node-minify/terser" "^8.0.6"
+    "@tsconfig/node18" "^1.0.1"
+    aws4fetch "^1.0.18"
+    chalk "^5.3.0"
+    esbuild "0.19.2"
+    express "5.0.1"
+    path-to-regexp "^6.3.0"
+    urlpattern-polyfill "^10.0.0"
+
 "@rtsao/scc@^1.1.0":
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@rtsao/scc/-/scc-1.1.0.tgz#927dd2fae9bc3361403ac2c7a00c32ddce9ad7e8"
